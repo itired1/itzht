@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — ПривГУПС</title>
+  <meta name="description" content="Контакты ПривГУПС: приёмная комиссия, ректорат, телефон, email, адрес. Форма обратной связи.">
+  <meta property="og:title" content="Контакты — ПривГУПС">
+  <meta property="og:description" content="Контакты ПривГУПС: приёмная комиссия, ректорат, телефон, email, адрес.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://samgups.ru/contacts.html">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Контакты — ПривГУПС">
+  <meta name="twitter:description" content="Контакты ПривГУПС: приёмная комиссия, ректорат, телефон, email, адрес.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="preloader" id="preloader">
+    <div class="preloader-glow"></div>
+    <div class="preloader-logo">
+      <span class="preloader-logo-letter">И</span>
+      <span class="preloader-logo-letter">Т</span>
+      <span class="preloader-logo-letter">Ж</span>
+      <span class="preloader-logo-letter">Т</span>
+    </div>
+    <div class="preloader-underline"></div>
+    <div class="preloader-progress">
+      <div class="preloader-progress-track">
+        <div class="preloader-progress-fill"></div>
+      </div>
+    </div>
+    <div class="preloader-sub" data-i18n="loading">Загрузка</div>
+  </div>
+
+  <div class="top-bar">
+    <div class="container">
+      <span data-i18n="siteTitle">Приволжский государственный университет путей сообщения</span>
+      <div class="top-bar-links">
+        <a href="tel:88007752325" class="essential" data-i18n="topPhone">8-800-775-23-25</a>
+        <span style="color:var(--text-dim);">|</span>
+        <a href="#" class="essential" data-i18n="topBlind">Версия для слабовидящих</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <div class="container">
+      <a href="/" class="logo-wrap">
+        <div class="logo-icon">П</div>
+        <div>
+          <div class="logo-text" data-i18n="siteShort">ПривГУПС</div>
+          <small class="logo-text" style="font-weight:400;font-size:12px;color:var(--text-muted);display:block;">Приволжский государственный университет путей сообщения</small>
+        </div>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">Об университете</a>
+        <a href="education.html">Образование</a>
+        <a href="index.html#science">Наука</a>
+        <a href="index.html#structure">Структура</a>
+        <a href="news.html">Новости</a>
+        <a href="contacts.html" class="active">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn lang-btn-ru" title="Русский">RU</button>
+        <button class="icon-btn lang-btn-en" title="English">EN</button>
+        <button class="icon-btn search-btn" aria-label="Поиск" onclick="toggleSearch()">🔍</button>
+        <button class="icon-btn theme-btn" aria-label="Toggle theme"><span class="icon">☀</span></button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <span class="section-tag" data-i18n="contactsTag">Контакты</span>
+        <h1 data-i18n="contactsTitle">Свяжитесь с нами</h1>
+        <p>Мы всегда рады ответить на ваши вопросы. Свяжитесь с нами удобным для вас способом.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="content-grid">
+        <div class="content-main">
+          <h2>Приёмная комиссия</h2>
+          <div class="contact-card">
+            <div class="contact-card-row">
+              <span class="contact-card-icon">📞</span>
+              <div>
+                <div class="contact-card-label">Телефон</div>
+                <div class="contact-card-value">8-800-775-23-25</div>
+              </div>
+            </div>
+            <div class="contact-card-row">
+              <span class="contact-card-icon">✉️</span>
+              <div>
+                <div class="contact-card-label">Email</div>
+                <div class="contact-card-value">priem@samgups.ru</div>
+              </div>
+            </div>
+            <div class="contact-card-row">
+              <span class="contact-card-icon">📍</span>
+              <div>
+                <div class="contact-card-label">Адрес</div>
+                <div class="contact-card-value">г. Самара, ул. Свободы, 2В</div>
+              </div>
+            </div>
+            <div class="contact-card-row">
+              <span class="contact-card-icon">🕐</span>
+              <div>
+                <div class="contact-card-label">Часы работы</div>
+                <div class="contact-card-value">Пн–Пт: 9:00 – 17:00</div>
+              </div>
+            </div>
+          </div>
+
+          <h2>Ректорат</h2>
+          <div class="contact-card">
+            <div class="contact-card-row">
+              <span class="contact-card-icon">📍</span>
+              <div>
+                <div class="contact-card-label">Адрес</div>
+                <div class="contact-card-value">г. Самара, ул. Свободы, 2В, каб. 3401</div>
+              </div>
+            </div>
+            <div class="contact-card-row">
+              <span class="contact-card-icon">✉️</span>
+              <div>
+                <div class="contact-card-label">Email</div>
+                <div class="contact-card-value">rector@samgups.ru</div>
+              </div>
+            </div>
+          </div>
+
+          <h2>Факультеты и кафедры</h2>
+          <div class="contact-card">
+            <div class="contact-card-row">
+              <span class="contact-card-icon">🚂</span>
+              <div>
+                <div class="contact-card-label">Факультет «Эксплуатация железных дорог»</div>
+                <div class="contact-card-value">ef@samgups.ru</div>
+              </div>
+            </div>
+            <div class="contact-card-row">
+              <span class="contact-card-icon">🔧</span>
+              <div>
+                <div class="contact-card-label">Факультет «Подвижной состав и транспортная инфраструктура»</div>
+                <div class="contact-card-value">pf@samgups.ru</div>
+              </div>
+            </div>
+            <div class="contact-card-row">
+              <span class="contact-card-icon">💻</span>
+              <div>
+                <div class="contact-card-label">Факультет «Информационные технологии и экономика»</div>
+                <div class="contact-card-value">it@samgups.ru</div>
+              </div>
+            </div>
+          </div>
+
+          <h2>Форма обратной связи</h2>
+          <form class="contact-page-form" onsubmit="event.preventDefault();alert('Спасибо! Ваше сообщение отправлено. Мы свяжемся с вами в ближайшее время.');">
+            <div class="form-row">
+              <input type="text" placeholder="Ваше имя" required>
+              <input type="email" placeholder="Email" required>
+            </div>
+            <input type="tel" placeholder="Телефон">
+            <select required>
+              <option value="">Тема обращения</option>
+              <option>Поступление и приём</option>
+              <option>Вопросы по обучению</option>
+              <option>Сотрудничество</option>
+              <option>Другое</option>
+            </select>
+            <textarea placeholder="Ваше сообщение..." required></textarea>
+            <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Отправить сообщение</button>
+          </form>
+        </div>
+        <aside class="content-sidebar">
+          <div class="sidebar-card">
+            <h3>Цифровой университет</h3>
+            <p style="font-size:13px;color:var(--text-muted);margin-bottom:12px;">Электронная образовательная среда ПривГУПС: расписание, оценки, личное портфолио.</p>
+            <a href="https://euniver.samgups.ru" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;">Перейти →</a>
+          </div>
+          <div class="sidebar-card">
+            <h3>Реквизиты</h3>
+            <div class="fact-row"><span>ИНН:</span><strong>6317012345</strong></div>
+            <div class="fact-row"><span>КПП:</span><strong>631701001</strong></div>
+            <div class="fact-row"><span>ОГРН:</span><strong>1036300123456</strong></div>
+            <div class="fact-row"><span>ОКПО:</span><strong>12345678</strong></div>
+          </div>
+          <div class="sidebar-card">
+            <h3>Как добраться</h3>
+            <p style="font-size:13px;color:var(--text-muted);">Главный корпус расположен в Октябрьском районе г. Самары, вблизи остановки «Улица Свободы». Автобусы: 1, 22, 47, 67; маршрутные такси: 89, 96, 113.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4 data-i18n="siteShort">ПривГУПС</h4>
+          <p data-i18n="footerDesc">Приволжский государственный университет путей сообщения. Готовим специалистов для железнодорожной отрасли с 1973 года. Лицензия и государственная аккредитация.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footerEdu">Образование</h4>
+          <a href="education.html" data-i18n="footerEdu1">Высшее образование</a>
+          <a href="education.html" data-i18n="footerEdu2">Среднее проф. образование</a>
+          <a href="education.html" data-i18n="footerEdu3">Доп. образование</a>
+          <a href="education.html" data-i18n="footerEdu4">Аспирантура</a>
+          <a href="index.html#branches" data-i18n="footerEdu5">Филиалы</a>
+        </div>
+        <div>
+          <h4 data-i18n="footerStudents">Студентам</h4>
+          <a href="https://euniver.samgups.ru" target="_blank" data-i18n="footerStud1">Расписание занятий</a>
+          <a href="https://euniver.samgups.ru" target="_blank" data-i18n="footerStud2">Личный кабинет</a>
+          <a href="https://euniver.samgups.ru" target="_blank" data-i18n="footerStud3">Цифровой университет</a>
+          <a href="#" data-i18n="footerStud4">Общежития</a>
+          <a href="#" data-i18n="footerStud5">Спорт и культура</a>
+        </div>
+        <div>
+          <h4 data-i18n="footerUniv">Университет</h4>
+          <a href="about.html" data-i18n="footerUniv1">История и музей</a>
+          <a href="about.html" data-i18n="footerUniv2">Руководство</a>
+          <a href="#" data-i18n="footerUniv3">Противодействие коррупции</a>
+          <a href="#" data-i18n="footerUniv4">Пресс-центр</a>
+          <a href="contacts.html" data-i18n="footerUniv5">Контакты</a>
+        </div>
+      </div>
+      <div class="footer-bottom" data-i18n="footerCopy">© 2026 Приволжский государственный университет путей сообщения (ПривГУПС)</div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="eduTitle">Программы подготовки — ПривГУПС</title>
+  <meta name="description" content="Образовательные программы ПривГУПС: высшее, среднее профессиональное и дополнительное образование. Бакалавриат, специалитет, магистратура, аспирантура.">
+  <meta property="og:title" content="Программы подготовки — ПривГУПС">
+  <meta property="og:description" content="Образовательные программы ПривГУПС: высшее, среднее профессиональное и дополнительное образование.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://samgups.ru/education.html">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Программы подготовки — ПривГУПС">
+  <meta name="twitter:description" content="Образовательные программы ПривГУПС.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="preloader" id="preloader">
+    <div class="preloader-glow"></div>
+    <div class="preloader-logo">
+      <span class="preloader-logo-letter">И</span>
+      <span class="preloader-logo-letter">Т</span>
+      <span class="preloader-logo-letter">Ж</span>
+      <span class="preloader-logo-letter">Т</span>
+    </div>
+    <div class="preloader-underline"></div>
+    <div class="preloader-progress">
+      <div class="preloader-progress-track">
+        <div class="preloader-progress-fill"></div>
+      </div>
+    </div>
+    <div class="preloader-sub" data-i18n="loading">Загрузка</div>
+  </div>
+
+  <div class="top-bar">
+    <div class="container">
+      <span data-i18n="siteTitle">Приволжский государственный университет путей сообщения</span>
+      <div class="top-bar-links">
+        <a href="tel:88007752325" class="essential" data-i18n="topPhone">8-800-775-23-25</a>
+        <span style="color:var(--text-dim);">|</span>
+        <a href="#" class="essential" data-i18n="topBlind">Версия для слабовидящих</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <div class="container">
+      <a href="/" class="logo-wrap">
+        <div class="logo-icon">П</div>
+        <div>
+          <div class="logo-text" data-i18n="siteShort">ПривГУПС</div>
+          <small class="logo-text" style="font-weight:400;font-size:12px;color:var(--text-muted);display:block;">Приволжский государственный университет путей сообщения</small>
+        </div>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">Об университете</a>
+        <a href="education.html" class="active">Образование</a>
+        <a href="index.html#science">Наука</a>
+        <a href="index.html#structure">Структура</a>
+        <a href="news.html">Новости</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn lang-btn-ru" title="Русский">RU</button>
+        <button class="icon-btn lang-btn-en" title="English">EN</button>
+        <button class="icon-btn search-btn" aria-label="Поиск" onclick="toggleSearch()">🔍</button>
+        <button class="icon-btn theme-btn" aria-label="Toggle theme"><span class="icon">☀</span></button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <span class="section-tag" data-i18n="eduTag">Образование</span>
+        <h1 data-i18n="eduTitle">Программы подготовки</h1>
+        <p data-i18n="eduDesc">Современные образовательные программы высшего, среднего профессионального и дополнительного образования</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="content-grid">
+        <div class="content-main">
+          <h2>Высшее образование</h2>
+          <p>ПривГУПС реализует программы бакалавриата, специалитета, магистратуры и аспирантуры по транспортным, инженерным, IT и экономическим направлениям. Все программы соответствуют федеральным государственным образовательным стандартам.</p>
+
+          <h3>Бакалавриат и специалитет</h3>
+          <div class="program-list">
+            <div class="program-item">
+              <div class="program-code">23.03.01</div>
+              <div class="program-info">
+                <div class="program-title">Технология транспортных процессов</div>
+                <div class="program-desc">Организация перевозок и управление на транспорте</div>
+              </div>
+              <span class="program-badge">очная</span>
+            </div>
+            <div class="program-item">
+              <div class="program-code">23.05.04</div>
+              <div class="program-info">
+                <div class="program-title">Эксплуатация железных дорог</div>
+                <div class="program-desc">Магистральный транспорт, транспортный бизнес и логистика</div>
+              </div>
+              <span class="program-badge">очная</span>
+            </div>
+            <div class="program-item">
+              <div class="program-code">23.05.06</div>
+              <div class="program-info">
+                <div class="program-title">Строительство железных дорог, мостов и транспортных тоннелей</div>
+                <div class="program-desc">Управление, организация и технология строительства</div>
+              </div>
+              <span class="program-badge">очная</span>
+            </div>
+            <div class="program-item">
+              <div class="program-code">09.03.01</div>
+              <div class="program-info">
+                <div class="program-title">Информатика и вычислительная техника</div>
+                <div class="program-desc">Цифровые технологии на транспорте</div>
+              </div>
+              <span class="program-badge">очная</span>
+            </div>
+            <div class="program-item">
+              <div class="program-code">38.03.01</div>
+              <div class="program-info">
+                <div class="program-title">Экономика</div>
+                <div class="program-desc">Экономика и управление на транспорте</div>
+              </div>
+              <span class="program-badge">очная</span>
+            </div>
+            <div class="program-item">
+              <div class="program-code">40.03.01</div>
+              <div class="program-info">
+                <div class="program-title">Юриспруденция</div>
+                <div class="program-desc">Правовое обеспечение на транспорте</div>
+              </div>
+              <span class="program-badge">очно-заочная</span>
+            </div>
+          </div>
+
+          <h2>Среднее профессиональное образование</h2>
+          <p>СПО реализуется в колледжах и техникумах ПривГУПС в Самаре, Саратове, Казани, Пензе, Кирове, Алатыре, Ижевске, Ртищево. Направления подготовки: техническая эксплуатация подвижного состава, организация перевозок, строительство железных дорог, автоматика и телемеханика на транспорте.</p>
+          <p>Выпускники СПО получают диплом государственного образца и возможность продолжить обучение по сокращённым программам высшего образования.</p>
+
+          <h2>Дополнительное образование</h2>
+          <p>Институт дополнительного образования ПривГУПС предлагает программы профессиональной переподготовки и повышения квалификации для специалистов транспортной отрасли. Центр транспортной безопасности проводит обучение по программам обеспечения транспортной безопасности.</p>
+
+          <h2>Аспирантура</h2>
+          <p>Подготовка кадров высшей квалификации осуществляется по научным специальностям: «Транспортные системы», «Эксплуатация и ремонт транспортных средств», «Управление процессами перевозок», «Строительство и эксплуатация транспортных сооружений».</p>
+
+          <div class="cta-box" style="margin-top:48px;">
+            <h2>Готов стать студентом ПривГУПС?</h2>
+            <p>Приёмная комиссия ждёт твои документы. Поступай в ведущий транспортный вуз Поволжья!</p>
+            <a href="contacts.html" class="btn btn-primary">Связаться с приёмной комиссией</a>
+          </div>
+        </div>
+        <aside class="content-sidebar">
+          <div class="sidebar-card">
+            <h3>Приёмная комиссия</h3>
+            <p style="font-size:13px;color:var(--text-muted);margin-bottom:12px;">
+              📞 <strong style="color:var(--text-primary);">8-800-775-23-25</strong><br>
+              ✉️ priem@samgups.ru<br>
+              📍 Самара, ул. Свободы, 2В
+            </p>
+            <a href="contacts.html" class="btn btn-primary" style="width:100%;justify-content:center;">Подать документы</a>
+          </div>
+          <div class="sidebar-card">
+            <h3>Полезные ссылки</h3>
+            <a href="https://euniver.samgups.ru" target="_blank">Цифровой университет →</a>
+            <a href="#">Расписание занятий →</a>
+            <a href="#">Личный кабинет студента →</a>
+            <a href="#">Библиотека →</a>
+            <a href="#">Общежития →</a>
+          </div>
+          <div class="sidebar-card">
+            <h3>Документы для поступления</h3>
+            <a href="#">Правила приёма 2026 →</a>
+            <a href="#">Перечень направлений →</a>
+            <a href="#">Количество бюджетных мест →</a>
+            <a href="#">Образцы документов →</a>
+            <a href="#">Стоимость обучения →</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4 data-i18n="siteShort">ПривГУПС</h4>
+          <p data-i18n="footerDesc">Приволжский государственный университет путей сообщения. Готовим специалистов для железнодорожной отрасли с 1973 года. Лицензия и государственная аккредитация.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footerEdu">Образование</h4>
+          <a href="education.html" data-i18n="footerEdu1">Высшее образование</a>
+          <a href="education.html" data-i18n="footerEdu2">Среднее проф. образование</a>
+          <a href="education.html" data-i18n="footerEdu3">Доп. образование</a>
+          <a href="education.html" data-i18n="footerEdu4">Аспирантура</a>
+          <a href="index.html#branches" data-i18n="footerEdu5">Филиалы</a>
+        </div>
+        <div>
+          <h4 data-i18n="footerStudents">Студентам</h4>
+          <a href="https://euniver.samgups.ru" target="_blank" data-i18n="footerStud1">Расписание занятий</a>
+          <a href="https://euniver.samgups.ru" target="_blank" data-i18n="footerStud2">Личный кабинет</a>
+          <a href="https://euniver.samgups.ru" target="_blank" data-i18n="footerStud3">Цифровой университет</a>
+          <a href="#" data-i18n="footerStud4">Общежития</a>
+          <a href="#" data-i18n="footerStud5">Спорт и культура</a>
+        </div>
+        <div>
+          <h4 data-i18n="footerUniv">Университет</h4>
+          <a href="about.html" data-i18n="footerUniv1">История и музей</a>
+          <a href="about.html" data-i18n="footerUniv2">Руководство</a>
+          <a href="#" data-i18n="footerUniv3">Противодействие коррупции</a>
+          <a href="#" data-i18n="footerUniv4">Пресс-центр</a>
+          <a href="contacts.html" data-i18n="footerUniv5">Контакты</a>
+        </div>
+      </div>
+      <div class="footer-bottom" data-i18n="footerCopy">© 2026 Приволжский государственный университет путей сообщения (ПривГУПС)</div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

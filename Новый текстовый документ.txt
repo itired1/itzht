@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="siteTitle">Приволжский государственный университет путей сообщения</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="container">
+      <span data-i18n="siteTitle">Приволжский государственный университет путей сообщения</span>
+      <div class="top-bar-links">
+        <a href="tel:88007752325" class="essential" data-i18n="topPhone">8-800-775-23-25</a>
+        <span style="color:var(--text-dim);">|</span>
+        <a href="#" class="essential" data-i18n="topBlind">Версия для слабовидящих</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <div class="container">
+      <a href="/" class="logo-wrap">
+        <div class="logo-icon">П</div>
+        <div>
+          <div class="logo-text" data-i18n="siteShort">ПривГУПС</div>
+          <small class="logo-text" style="font-weight:400;font-size:12px;color:var(--text-muted);display:block;" data-i18n="siteSub">Приволжский государственный университет путей сообщения</small>
+        </div>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="#hero" class="active" data-i18n="navHome">Главная</a>
+        <a href="#about" data-i18n="navAbout">Об университете</a>
+        <a href="#education" data-i18n="navEducation">Образование</a>
+        <a href="#science" data-i18n="navScience">Наука</a>
+        <a href="#structure" data-i18n="navStructure">Структура</a>
+        <a href="#contacts" data-i18n="navContacts">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn lang-btn-ru" title="Русский">RU</button>
+        <button class="icon-btn lang-btn-en" title="English">EN</button>
+        <button class="icon-btn theme-btn" aria-label="Toggle theme"><span class="icon">☀</span></button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="hero">
+    <div class="hero-canvas" id="heroCanvas"></div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge"><span class="dot"></span> <span data-i18n="heroBadge">Приемная кампания 2026</span></div>
+        <h1><span data-i18n="heroTitle1">Построй будущее</span><br><span class="gradient-text" data-i18n="heroTitle2">с ПривГУПС</span></h1>
+        <p data-i18n="heroDesc">Ведущий транспортный вуз Поволжья. Высшее и среднее профессиональное образование, наука и инновации для железнодорожной отрасли России. Основан в 1973 году.</p>
+        <div class="hero-btns">
+          <a href="#" class="btn btn-primary" data-i18n="heroBtn1">Подать документы</a>
+          <a href="#about" class="btn btn-outline" data-i18n="heroBtn2">О университете</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><span class="num">12 000+</span><span class="label" data-i18n="statStudents">Студентов</span></div>
+          <div class="hero-stat"><span class="num">40+</span><span class="label" data-i18n="statDirections">Направлений подготовки</span></div>
+          <div class="hero-stat"><span class="num">10</span><span class="label" data-i18n="statBranches">Филиалов в городах РФ</span></div>
+          <div class="hero-stat"><span class="num">1973</span><span class="label" data-i18n="statFounded">Год основания</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="aboutTag">О университете</span>
+        <h2 data-i18n="aboutTitle">Приволжский государственный университет путей сообщения</h2>
+        <p data-i18n="aboutDesc">ПривГУПС — ведущий транспортный вуз Поволжья, готовящий специалистов для железнодорожной отрасли и транспортного комплекса России</p>
+      </div>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <h3 data-i18n="aboutSubtitle">История и миссия</h3>
+          <p data-i18n="aboutP1">Приволжский государственный университет путей сообщения (ранее — СамГУПС) ведёт свою историю с 1973 года. За десятилетия работы вуз подготовил десятки тысяч высококвалифицированных специалистов для железнодорожного транспорта.</p>
+          <p data-i18n="aboutP2">Сегодня ПривГУПС — это современный образовательный и научный центр, объединяющий головной вуз в Самаре, 10 филиалов и 3 техникума в городах Поволжья, Прикамья и Центральной России.</p>
+          <div class="about-features">
+            <div class="about-feature"><span class="check">✓</span> <span data-i18n="aboutF1">Государственная аккредитация</span></div>
+            <div class="about-feature"><span class="check">✓</span> <span data-i18n="aboutF2">Военная кафедра</span></div>
+            <div class="about-feature"><span class="check">✓</span> <span data-i18n="aboutF3">Бюджетные места</span></div>
+            <div class="about-feature"><span class="check">✓</span> <span data-i18n="aboutF4">Общежития для студентов</span></div>
+            <div class="about-feature"><span class="check">✓</span> <span data-i18n="aboutF5">Трудоустройство в РЖД</span></div>
+            <div class="about-feature"><span class="check">✓</span> <span data-i18n="aboutF6">Цифровая образовательная среда</span></div>
+          </div>
+        </div>
+        <div class="about-stats-grid">
+          <div class="stat-card" style="--stat-bg:linear-gradient(135deg,rgba(59,130,246,0.12),rgba(59,130,246,0.04));--stat-border:rgba(59,130,246,0.1);">
+            <div class="num" style="background:linear-gradient(135deg,#60a5fa,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">12 000+</div>
+            <div class="lbl" data-i18n="statStudents">Студентов</div>
+          </div>
+          <div class="stat-card" style="--stat-bg:linear-gradient(135deg,rgba(16,185,129,0.12),rgba(16,185,129,0.04));--stat-border:rgba(16,185,129,0.1);">
+            <div class="num" style="background:linear-gradient(135deg,#34d399,#10b981);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">40+</div>
+            <div class="lbl" data-i18n="statDirections">Направлений</div>
+          </div>
+          <div class="stat-card" style="--stat-bg:linear-gradient(135deg,rgba(245,158,11,0.12),rgba(245,158,11,0.04));--stat-border:rgba(245,158,11,0.1);">
+            <div class="num" style="background:linear-gradient(135deg,#fbbf24,#f59e0b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">10</div>
+            <div class="lbl" data-i18n="statBranches">Филиалов</div>
+          </div>
+          <div class="stat-card" style="--stat-bg:linear-gradient(135deg,rgba(168,85,247,0.12),rgba(168,85,247,0.04));--stat-border:rgba(168,85,247,0.1);">
+            <div class="num" style="background:linear-gradient(135deg,#c084fc,#a855f7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">1973</div>
+            <div class="lbl" data-i18n="statFounded">Год основания</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ STRUCTURE ═══ -->
+  <section class="section structure-section" id="structure">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="structTag">Структура</span>
+        <h2 data-i18n="structTitle">Сведения об образовательной организации</h2>
+        <p data-i18n="structDesc">Полная информация о деятельности университета в соответствии с требованиями законодательства РФ</p>
+      </div>
+      <div class="struct-grid">
+        <div class="struct-card reveal"><span class="badge" style="background:rgba(59,130,246,0.15);color:#60a5fa;" data-i18n="structBadge1">Основное</span><h4 data-i18n="struct1Title">Основные сведения</h4><p data-i18n="struct1Desc">Полное наименование, дата создания, учредитель, место нахождения, режим работы</p><a href="#" data-i18n="structMore">Подробнее →</a></div>
+        <div class="struct-card reveal"><span class="badge" style="background:rgba(16,185,129,0.15);color:#34d399;" data-i18n="structBadge2">Структура</span><h4 data-i18n="struct2Title">Структура и органы управления</h4><p data-i18n="struct2Desc">Ректорат, факультеты, кафедры, филиалы, представительства, коллегиальные органы</p><a href="#" data-i18n="structMore">Подробнее →</a></div>
+        <div class="struct-card reveal"><span class="badge" style="background:rgba(245,158,11,0.15);color:#fbbf24;" data-i18n="structBadge3">Документы</span><h4 data-i18n="struct3Title">Документы</h4><p data-i18n="struct3Desc">Устав, лицензия, свидетельство об аккредитации, локальные нормативные акты</p><a href="#" data-i18n="structMore">Подробнее →</a></div>
+        <div class="struct-card reveal"><span class="badge" style="background:rgba(168,85,247,0.15);color:#c084fc;" data-i18n="structBadge4">Стандарты</span><h4 data-i18n="struct4Title">Образовательные стандарты</h4><p data-i18n="struct4Desc">ФГОС по всем направлениям, учебные планы, аннотации к программам</p><a href="#" data-i18n="structMore">Подробнее →</a></div>
+        <div class="struct-card reveal"><span class="badge" style="background:rgba(236,72,153,0.15);color:#f472b6;" data-i18n="structBadge5">Руководство</span><h4 data-i18n="struct5Title">Руководство и педсостав</h4><p data-i18n="struct5Desc">Ректор, проректоры, деканы, заведующие кафедрами, преподавательский состав</p><a href="#" data-i18n="structMore">Подробнее →</a></div>
+        <div class="struct-card reveal"><span class="badge" style="background:rgba(59,130,246,0.15);color:#60a5fa;" data-i18n="structBadge6">Материалы</span><h4 data-i18n="struct6Title">Материально-техническая база</h4><p data-i18n="struct6Desc">Учебные корпуса, лаборатории, библиотеки, общежития, спортсооружения</p><a href="#" data-i18n="structMore">Подробнее →</a></div>
+        <div class="struct-card reveal"><span class="badge" style="background:rgba(16,185,129,0.15);color:#34d399;" data-i18n="structBadge7">Финансы</span><h4 data-i18n="struct7Title">Финансово-хозяйственная деятельность</h4><p data-i18n="struct7Desc">Платные услуги, бюджет, стипендии, вакантные места, меры поддержки</p><a href="#" data-i18n="structMore">Подробнее →</a></div>
+        <div class="struct-card reveal"><span class="badge" style="background:rgba(245,158,11,0.15);color:#fbbf24;" data-i18n="structBadge8">Сотрудничество</span><h4 data-i18n="struct8Title">Международная деятельность</h4><p data-i18n="struct8Desc">Программы обмена, международные проекты, сотрудничество с зарубежными вузами</p><a href="#" data-i18n="structMore">Подробнее →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EDUCATION ═══ -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="eduTag">Образование</span>
+        <h2 data-i18n="eduTitle">Программы подготовки</h2>
+        <p data-i18n="eduDesc">Современные образовательные программы высшего, среднего профессионального и дополнительного образования</p>
+      </div>
+      <div class="dir-grid">
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(59,130,246,0.15);color:#60a5fa;">🎓</div>
+          <h3 data-i18n="edu1Title">Высшее образование</h3>
+          <p data-i18n="edu1Desc">Бакалавриат, специалитет, магистратура и аспирантура. Транспортные, инженерные, IT и экономические специальности.</p>
+          <div class="sub-links">
+            <a href="#" data-i18n="edu1Link1">Абитуриентам →</a>
+            <a href="#" data-i18n="edu1Link2">Приемная комиссия →</a>
+            <a href="#" data-i18n="edu1Link3">Вопросы и ответы →</a>
+          </div>
+        </div>
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(16,185,129,0.15);color:#34d399;">📖</div>
+          <h3 data-i18n="edu2Title">Среднее профессиональное образование</h3>
+          <p data-i18n="edu2Desc">Колледжи и техникумы в Самаре, Саратове, Казани, Пензе, Кирове, Алатыре, Ижевске, Ртищево.</p>
+          <div class="sub-links">
+            <a href="#" data-i18n="edu2Link1">Самарский колледж ж/д транспорта →</a>
+            <a href="#" data-i18n="edu2Link2">Все филиалы СПО →</a>
+          </div>
+        </div>
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(245,158,11,0.15);color:#fbbf24;">🔬</div>
+          <h3 data-i18n="edu3Title">Дополнительное образование</h3>
+          <p data-i18n="edu3Desc">Повышение квалификации, профессиональная переподготовка, центр транспортной безопасности.</p>
+          <div class="sub-links">
+            <a href="#" data-i18n="edu3Link1">Институт дополнительного образования →</a>
+            <a href="#" data-i18n="edu3Link2">Институт профессиональных компетенций →</a>
+          </div>
+        </div>
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(168,85,247,0.15);color:#c084fc;">👨‍🎓</div>
+          <h3 data-i18n="edu4Title">Студентам</h3>
+          <p data-i18n="edu4Desc">Расписание, цифровой университет, личный кабинет, общежития, портфолио, спорт и культура.</p>
+          <div class="sub-links">
+            <a href="#" data-i18n="edu4Link1">Цифровой университет →</a>
+            <a href="#" data-i18n="edu4Link2">Личный кабинет →</a>
+            <a href="#" data-i18n="edu4Link3">Расписание →</a>
+            <a href="#" data-i18n="edu4Link4">Библиотека →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SCIENCE ═══ -->
+  <section class="section" style="background:var(--bg-section-alt);" id="science">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="scienceTag">Наука</span>
+        <h2 data-i18n="scienceTitle">Научная деятельность</h2>
+        <p data-i18n="scienceDesc">Фундаментальные и прикладные исследования в области железнодорожного транспорта и смежных отраслей</p>
+      </div>
+      <div class="dir-grid">
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(59,130,246,0.15);color:#60a5fa;">🔬</div>
+          <h3 data-i18n="sci1Title">Научные школы и разработки</h3>
+          <p data-i18n="sci1Desc">Исследования в области безопасности движения, цифровых технологий на транспорте, строительства ж/д путей и логистики.</p>
+        </div>
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(16,185,129,0.15);color:#34d399;">🎓</div>
+          <h3 data-i18n="sci2Title">Диссертационный совет</h3>
+          <p data-i18n="sci2Desc">Совет 44.2.006.01 по защите докторских и кандидатских диссертаций по транспортным специальностям.</p>
+        </div>
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(245,158,11,0.15);color:#fbbf24;">📰</div>
+          <h3 data-i18n="sci3Title">Научные издания</h3>
+          <p data-i18n="sci3Desc">Рецензируемые научные журналы, сборники трудов конференций, монографии и учебные пособия.</p>
+        </div>
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(168,85,247,0.15);color:#c084fc;">⭐</div>
+          <h3 data-i18n="sci4Title">Конкурсы и гранты</h3>
+          <p data-i18n="sci4Desc">Конкурсы РНФ, гранты Президента РФ, студенческие научные кружки и олимпиады дипломных проектов.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ BRANCHES ═══ -->
+  <section class="section structure-section" id="branches">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">🏛</span>
+        <h2 data-i18n="branchesTitle">География ПривГУПС</h2>
+        <p data-i18n="branchesDesc">10 филиалов и 3 техникума в городах Поволжья, Прикамья и Центральной России</p>
+      </div>
+      <div class="branch-grid reveal">
+        <div class="branch-card"><div class="city">Самара</div><div class="name">Головной вуз ПривГУПС</div></div>
+        <div class="branch-card"><div class="city">Оренбург</div><div class="name">ОрИПС — филиал ПривГУПС</div></div>
+        <div class="branch-card"><div class="city">Уфа</div><div class="name">УТЖТ — филиал ПривГУПС</div></div>
+        <div class="branch-card"><div class="city">Нижний Новгород</div><div class="name">НИПС — филиал ПривГУПС</div></div>
+        <div class="branch-card"><div class="city">Алатырь</div><div class="name">Филиал ПривГУПС в г. Алатыре</div></div>
+        <div class="branch-card"><div class="city">Ижевск</div><div class="name">ИТЖТ — филиал ПривГУПС</div></div>
+        <div class="branch-card"><div class="city">Казань</div><div class="name">Филиал ПривГУПС в г. Казани</div></div>
+        <div class="branch-card"><div class="city">Пенза</div><div class="name">Филиал ПривГУПС в г. Пензе</div></div>
+        <div class="branch-card"><div class="city">Ртищево</div><div class="name">Филиал ПривГУПС в г. Ртищево</div></div>
+        <div class="branch-card"><div class="city">Саратов</div><div class="name">Филиал ПривГУПС в г. Саратове</div></div>
+        <div class="branch-card"><div class="city">Киров</div><div class="name">Филиал ПривГУПС в г. Кирове</div></div>
+        <div class="branch-card"><div class="city">Рузаевка</div><div class="name">Представительство ПривГУПС</div></div>
+        <div class="branch-card"><div class="city">Орск</div><div class="name">Филиал ПривГУПС в г. Орске</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PARTNERS ═══ -->
+  <section class="section structure-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">🤝</span>
+        <h2>Партнёры и работодатели</h2>
+        <p>Ведущие компании транспортной отрасли — наши стратегические партнёры</p>
+      </div>
+      <div class="partners-carousel reveal">
+        <div class="partners-track" id="partnersTrack">
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Russian_Railways_Logo.svg" alt="РЖД" style="filter:drop-shadow(0 2px 4px rgba(0,0,0,0.1));" loading="lazy">
+            </div>
+            <span>ОАО «РЖД»</span>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Transmashholding_Logo.svg" alt="ТМХ" loading="lazy">
+            </div>
+            <span>Трансмашхолдинг</span>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Federalpkrzd.png" alt="ФПК" loading="lazy">
+            </div>
+            <span>Федеральная пассажирская компания</span>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Sibur_Holding_Logo.svg" alt="СИБУР" loading="lazy">
+            </div>
+            <span>СИБУР</span>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Logo_Transneft.svg" alt="Транснефть" loading="lazy">
+            </div>
+            <span>Транснефть</span>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/TransContainer_Logo.png" alt="ТрансКонтейнер" loading="lazy">
+            </div>
+            <span>ТрансКонтейнер</span>
+          </div>
+          <!-- Duplicate for infinite scroll -->
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Russian_Railways_Logo.svg" alt="РЖД" style="filter:drop-shadow(0 2px 4px rgba(0,0,0,0.1));" loading="lazy">
+            </div>
+            <span>ОАО «РЖД»</span>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Transmashholding_Logo.svg" alt="ТМХ" loading="lazy">
+            </div>
+            <span>Трансмашхолдинг</span>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Federalpkrzd.png" alt="ФПК" loading="lazy">
+            </div>
+            <span>Федеральная пассажирская компания</span>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Sibur_Holding_Logo.svg" alt="СИБУР" loading="lazy">
+            </div>
+            <span>СИБУР</span>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Logo_Transneft.svg" alt="Транснефть" loading="lazy">
+            </div>
+            <span>Транснефть</span>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/TransContainer_Logo.png" alt="ТрансКонтейнер" loading="lazy">
+            </div>
+            <span>ТрансКонтейнер</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CULTURE & SPORTS ═══ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">🏆</span>
+        <h2>Культура и спорт</h2>
+        <p>Студенческая жизнь в ПривГУПС — это не только учёба, но и яркие события, творчество, спорт и общественная деятельность</p>
+      </div>
+      <div class="dir-grid">
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(59,130,246,0.15);color:#60a5fa;">🎭</div>
+          <h3>Культура и творчество</h3>
+          <p>Студенческие коллективы, вокальные и танцевальные студии, КВН, театральная студия, творческие фестивали и конкурсы.</p>
+        </div>
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(16,185,129,0.15);color:#34d399;">⚽</div>
+          <h3>Спортивная жизнь</h3>
+          <p>Спортивный клуб, физкультурно-оздоровительный центр, секции по футболу, волейболу, баскетболу, лёгкой атлетике и единоборствам.</p>
+        </div>
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(245,158,11,0.15);color:#fbbf24;">🤝</div>
+          <h3>Общественные организации</h3>
+          <p>Студенческие трудовые отряды, профсоюзная организация, совет обучающихся, молодёжный центр "Молодая семья".</p>
+        </div>
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(168,85,247,0.15);color:#c084fc;">🏛️</div>
+          <h3>Музей истории вуза</h3>
+          <p>Музей истории ПривГУПС рассказывает о становлении и развитии университета, его выдающихся выпускниках и научных достижениях.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ NEWS ═══ -->
+  <section class="section" style="background:var(--bg-section-alt);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="newsTag">Новости</span>
+        <h2 data-i18n="newsTitle">Последние события университета</h2>
+        <p data-i18n="newsDesc">Будьте в курсе главных новостей ПривГУПС</p>
+      </div>
+      <div class="news-grid" id="newsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA ═══ -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-box reveal">
+        <h2 data-i18n="ctaTitle">Готов стать частью ПривГУПС?</h2>
+        <p data-i18n="ctaDesc">Подай документы онлайн уже сегодня и начни путь к профессии будущего в ведущем транспортном вузе Поволжья</p>
+        <a href="#" class="btn btn-primary" data-i18n="ctaBtn">Поступить сейчас</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACTS ═══ -->
+  <section class="section contact-section" id="contacts">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="contactsTag">Контакты</span>
+        <h2 data-i18n="contactsTitle">Свяжитесь с нами</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Приемная комиссия</h3>
+          <div class="phone" data-i18n="contactPhone">8-800-775-23-25</div>
+          <p>📍 <span data-i18n="contactAddress">г. Самара, ул. Свободы, 2В</span></p>
+          <p>✉️ <span data-i18n="contactEmail">priem@samgups.ru</span></p>
+          <p>🕐 <span data-i18n="contactHours">Пн–Пт: 9:00 – 17:00</span></p>
+          <h3 style="margin-top:28px;" data-i18n="contactRector">Ректорат</h3>
+          <p>📍 <span data-i18n="contactRectorAddr">г. Самара, ул. Свободы, 2В, каб. 3401</span></p>
+          <p>✉️ <span data-i18n="contactRectorEmail">rector@samgups.ru</span></p>
+          <p style="margin-top:20px;font-size:14px;color:var(--text-muted);">
+            <span data-i18n="contactDigital">Цифровой университет:</span>
+            <a href="#" style="color:var(--accent-light);font-weight:500;">euniver.samgups.ru</a>
+          </p>
+        </div>
+        <form class="contact-form reveal" onsubmit="event.preventDefault();alert(i18n[currentLang].formAlert)">
+          <input type="text" data-i18n="formName" placeholder="Ваше имя" required>
+          <input type="email" data-i18n="formEmail" placeholder="Email" required>
+          <input type="tel" data-i18n="formPhone" placeholder="Телефон">
+          <textarea data-i18n="formMessage" placeholder="Ваш вопрос..." required></textarea>
+          <button type="submit" class="btn btn-primary" style="align-self:flex-start;" data-i18n="formSubmit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4 data-i18n="siteShort">ПривГУПС</h4>
+          <p data-i18n="footerDesc">Приволжский государственный университет путей сообщения. Готовим специалистов для железнодорожной отрасли с 1973 года. Лицензия и государственная аккредитация.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footerEdu">Образование</h4>
+          <a href="#" data-i18n="footerEdu1">Высшее образование</a>
+          <a href="#" data-i18n="footerEdu2">Среднее проф. образование</a>
+          <a href="#" data-i18n="footerEdu3">Доп. образование</a>
+          <a href="#" data-i18n="footerEdu4">Аспирантура</a>
+          <a href="#" data-i18n="footerEdu5">Филиалы</a>
+        </div>
+        <div>
+          <h4 data-i18n="footerStudents">Студентам</h4>
+          <a href="#" data-i18n="footerStud1">Расписание занятий</a>
+          <a href="#" data-i18n="footerStud2">Личный кабинет</a>
+          <a href="#" data-i18n="footerStud3">Цифровой университет</a>
+          <a href="#" data-i18n="footerStud4">Общежития</a>
+          <a href="#" data-i18n="footerStud5">Спорт и культура</a>
+        </div>
+        <div>
+          <h4 data-i18n="footerUniv">Университет</h4>
+          <a href="#" data-i18n="footerUniv1">История и музей</a>
+          <a href="#" data-i18n="footerUniv2">Руководство</a>
+          <a href="#" data-i18n="footerUniv3">Противодействие коррупции</a>
+          <a href="#" data-i18n="footerUniv4">Пресс-центр</a>
+          <a href="#" data-i18n="footerUniv5">Контакты</a>
+        </div>
+      </div>
+      <div class="footer-bottom" data-i18n="footerCopy">© 2026 Приволжский государственный университет путей сообщения (ПривГУПС)</div>
+    </div>
+  </footer>
+
+  <!-- ═══ SCROLL TO TOP ═══ -->
+  <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+/* ── CSS Custom Properties (Theming) ── */
+:root {
+  --bg-primary: #07080d;
+  --bg-secondary: #05060a;
+  --bg-card: linear-gradient(145deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  --bg-card-hover: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  --bg-section-alt: rgba(255,255,255,0.015);
+  --bg-input: rgba(255,255,255,0.03);
+  --text-primary: #e2e8f0;
+  --text-secondary: #f1f5f9;
+  --text-muted: #64748b;
+  --text-dim: #475569;
+  --text-nav: #94a3b8;
+  --border-color: rgba(255,255,255,0.06);
+  --border-light: rgba(255,255,255,0.04);
+  --border-input: rgba(255,255,255,0.08);
+  --accent: #3b82f6;
+  --accent-rgb: 59, 130, 246;
+  --accent-light: #60a5fa;
+  --accent-dark: #2563eb;
+  --accent-dark-rgb: 37, 99, 235;
+  --gradient-accent: linear-gradient(135deg, #1e40af, #3b82f6);
+  --gradient-text: linear-gradient(135deg, #60a5fa, #a78bfa, #60a5fa);
+  --gradient-hero: radial-gradient(ellipse 700px 500px at 10% 30%, rgba(37,99,235,0.07), transparent),
+                   radial-gradient(ellipse 500px 500px at 90% 70%, rgba(139,92,246,0.05), transparent);
+  --shadow-card: 0 16px 48px rgba(0,0,0,0.3);
+  --shadow-btn: 0 4px 20px rgba(37,99,235,0.3);
+  --shadow-btn-hover: 0 8px 32px rgba(37,99,235,0.45);
+  --scrollbar-track: #07080d;
+  --scrollbar-thumb: #1e293b;
+  --scrollbar-thumb-hover: #334155;
+  --stat-bg: linear-gradient(135deg, rgba(59,130,246,0.12), rgba(59,130,246,0.04));
+  --stat-border: rgba(59,130,246,0.1);
+  --logo-shadow: 0 4px 16px rgba(59,130,246,0.25);
+  --header-bg: rgba(7,8,13,0.85);
+}
+
+[data-theme="light"] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-card: linear-gradient(145deg, #ffffff, #f8fafc);
+  --bg-card-hover: linear-gradient(145deg, #ffffff, #f1f5f9);
+  --bg-section-alt: #f1f5f9;
+  --bg-input: #f8fafc;
+  --text-primary: #1e293b;
+  --text-secondary: #0f172a;
+  --text-muted: #64748b;
+  --text-dim: #94a3b8;
+  --text-nav: #475569;
+  --border-color: #e2e8f0;
+  --border-light: #e2e8f0;
+  --border-input: #e2e8f0;
+  --accent: #2563eb;
+  --accent-rgb: 37, 99, 235;
+  --accent-light: #3b82f6;
+  --accent-dark: #1d4ed8;
+  --accent-dark-rgb: 29, 78, 216;
+  --gradient-accent: linear-gradient(135deg, #1e40af, #3b82f6);
+  --gradient-text: linear-gradient(135deg, #2563eb, #7c3aed, #2563eb);
+  --gradient-hero: radial-gradient(ellipse 700px 500px at 10% 30%, rgba(37,99,235,0.06), transparent),
+                   radial-gradient(ellipse 500px 500px at 90% 70%, rgba(139,92,246,0.04), transparent);
+  --shadow-card: 0 4px 16px rgba(0,0,0,0.06);
+  --shadow-btn: 0 4px 16px rgba(37,99,235,0.25);
+  --shadow-btn-hover: 0 8px 24px rgba(37,99,235,0.35);
+  --scrollbar-track: #f1f5f9;
+  --scrollbar-thumb: #cbd5e1;
+  --scrollbar-thumb-hover: #94a3b8;
+  --stat-bg: linear-gradient(135deg, rgba(37,99,235,0.06), rgba(37,99,235,0.02));
+  --stat-border: rgba(37,99,235,0.1);
+  --logo-shadow: 0 4px 16px rgba(37,99,235,0.2);
+  --header-bg: rgba(248,250,252,0.9);
+}
+
+/* ── Reset & Base ── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background .4s ease, color .4s ease;
+}
+a { text-decoration: none; color: inherit; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-thumb-hover); }
+
+/* ── Top Bar ── */
+.top-bar {
+  background: var(--bg-secondary);
+  color: var(--text-dim);
+  font-size: 13px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-light);
+  transition: background .4s;
+}
+.top-bar .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+.top-bar a { color: var(--text-nav); transition: color .3s; }
+.top-bar a:hover { color: var(--accent-light); }
+.top-bar-links { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+
+/* ── Header ── */
+.main-header {
+  background: var(--header-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-light);
+  position: sticky; top: 0; z-index: 100;
+  transition: background .4s;
+}
+.main-header .container { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+.logo-wrap { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+.logo-icon {
+  width: 48px; height: 48px;
+  background: var(--gradient-accent);
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-weight: 900; font-size: 22px;
+  box-shadow: var(--logo-shadow);
+  transition: box-shadow .3s;
+}
+.logo-text { font-weight: 700; font-size: 18px; color: var(--text-secondary); line-height: 1.2; transition: color .4s; }
+.logo-text small { font-weight: 400; font-size: 12px; color: var(--text-muted); display: block; }
+
+.header-actions { display: flex; align-items: center; gap: 8px; }
+.main-nav { display: flex; gap: 4px; }
+.main-nav a {
+  padding: 8px 16px; border-radius: 8px; font-size: 14px; font-weight: 500;
+  color: var(--text-nav); transition: all .25s; white-space: nowrap;
+  position: relative;
+}
+.main-nav a::after {
+  content: ''; position: absolute; bottom: 2px; left: 50%; transform: translateX(-50%);
+  width: 0; height: 2px; background: var(--accent); border-radius: 1px;
+  transition: width .25s ease;
+}
+.main-nav a:hover { color: var(--text-secondary); background: rgba(var(--accent-rgb), 0.08); }
+.main-nav a:hover::after { width: 16px; }
+.main-nav a.active { color: var(--accent-light); background: rgba(var(--accent-rgb), 0.1); }
+.main-nav a.active::after { width: 16px; }
+
+.icon-btn {
+  width: 38px; height: 38px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  background: transparent; border: none; cursor: pointer;
+  color: var(--text-nav); font-size: 18px;
+  transition: all .25s;
+}
+.icon-btn:hover { background: rgba(var(--accent-rgb), 0.1); color: var(--accent-light); }
+
+.menu-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+.menu-toggle span { display: block; width: 26px; height: 2.5px; background: var(--text-primary); border-radius: 2px; transition: .3s; }
+
+/* ── Hero ── */
+.hero {
+  min-height: 92vh;
+  display: flex; align-items: center;
+  position: relative; overflow: hidden;
+  background: var(--bg-secondary);
+  transition: background .4s;
+}
+.hero-canvas { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.hero-canvas canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.hero-overlay {
+  position: absolute; inset: 0;
+  background: var(--gradient-hero);
+  pointer-events: none;
+}
+.hero .container { position: relative; z-index: 1; padding: 140px 24px 80px; }
+.hero-content { max-width: 780px; }
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(var(--accent-rgb), 0.1);
+  padding: 6px 18px 6px 12px; border-radius: 100px;
+  font-size: 13px; font-weight: 500; margin-bottom: 24px;
+  border: 1px solid rgba(var(--accent-rgb), 0.2);
+  color: var(--accent-light);
+}
+.hero-badge .dot {
+  width: 8px; height: 8px; background: var(--accent); border-radius: 50%;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+@keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(.8)} }
+.hero h1 {
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 900; line-height: 1.08;
+  color: var(--text-secondary); margin-bottom: 20px;
+  letter-spacing: -0.02em;
+  transition: color .4s;
+}
+.hero h1 .gradient-text {
+  background: var(--gradient-text);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 4s ease-in-out infinite;
+}
+@keyframes gradient-shift { 0%,100%{background-position:0% 50%} 50%{background-position:100% 50%} }
+.hero p { font-size: 18px; color: var(--text-muted); max-width: 580px; margin-bottom: 36px; line-height: 1.7; }
+.hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 14px 30px; border-radius: 10px; font-weight: 600; font-size: 15px;
+  transition: all .3s cubic-bezier(.4,0,.2,1); cursor: pointer; border: none;
+}
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent-dark), var(--accent));
+  color: #fff;
+  box-shadow: var(--shadow-btn);
+}
+.btn-primary:hover { transform: translateY(-3px); box-shadow: var(--shadow-btn-hover); }
+.btn-outline {
+  background: transparent; color: var(--text-primary);
+  border: 1.5px solid rgba(148, 163, 184, 0.25);
+}
+.btn-outline:hover { border-color: rgba(var(--text-primary), 0.4); background: rgba(var(--accent-rgb), 0.04); transform: translateY(-3px); }
+.hero-stats { display: flex; gap: 48px; margin-top: 56px; flex-wrap: wrap; }
+.hero-stat .num { font-size: 36px; font-weight: 900; color: var(--text-secondary); display: block; line-height: 1; transition: color .4s; }
+.hero-stat .label { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+
+/* ── Sections ── */
+.section { padding: 100px 0; transition: background .4s; }
+.section-header { text-align: center; margin-bottom: 56px; }
+.section-header h2 { font-size: clamp(28px, 3vw, 38px); font-weight: 800; color: var(--text-secondary); letter-spacing: -0.01em; transition: color .4s; }
+.section-header p { color: var(--text-muted); margin-top: 10px; font-size: 16px; max-width: 600px; margin-left: auto; margin-right: auto; }
+.section-tag {
+  display: inline-block; padding: 5px 16px; border-radius: 100px;
+  font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em;
+  background: rgba(var(--accent-rgb), 0.1); color: var(--accent-light);
+  border: 1px solid rgba(var(--accent-rgb), 0.15); margin-bottom: 16px;
+}
+
+/* ── About ── */
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.about-text h3 { font-size: 24px; font-weight: 700; color: var(--text-secondary); margin-bottom: 16px; transition: color .4s; }
+.about-text p { color: var(--text-muted); margin-bottom: 16px; font-size: 15px; line-height: 1.7; }
+.about-features { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
+.about-feature { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--text-primary); }
+.about-feature .check { color: #34d399; font-weight: 700; font-size: 18px; }
+.about-stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.stat-card {
+  border-radius: 16px; padding: 32px; text-align: center;
+  border: 1px solid var(--stat-border);
+  background: var(--stat-bg);
+  transition: all .3s;
+}
+.stat-card:hover { transform: translateY(-4px); }
+.stat-card .num { font-size: 48px; font-weight: 900; display: block; line-height: 1; }
+.stat-card .lbl { color: var(--text-muted); font-size: 14px; margin-top: 4px; }
+
+/* ── Structure ── */
+.structure-section {
+  background: var(--bg-section-alt);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+.struct-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
+.struct-card {
+  background: var(--bg-card);
+  border-radius: 14px; padding: 24px;
+  border: 1px solid var(--border-color);
+  transition: all .35s;
+}
+.struct-card:hover { border-color: rgba(var(--accent-rgb), 0.2); transform: translateY(-3px); box-shadow: var(--shadow-card); }
+.struct-card h4 { font-size: 15px; font-weight: 600; color: var(--text-secondary); margin-bottom: 10px; }
+.struct-card p { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+.struct-card a { color: var(--accent-light); font-size: 13px; display: inline-block; margin-top: 8px; }
+.struct-card a:hover { text-decoration: underline; }
+.struct-card .badge {
+  display: inline-block; padding: 2px 10px; border-radius: 100px;
+  font-size: 11px; font-weight: 600; margin-bottom: 10px;
+}
+
+/* ── Directions / Education & Science ── */
+.dir-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 20px; }
+.dir-card {
+  background: var(--bg-card);
+  border-radius: 16px; padding: 32px 28px;
+  border: 1px solid var(--border-color);
+  transition: all .4s cubic-bezier(.4,0,.2,1);
+  position: relative; overflow: hidden;
+}
+.dir-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(var(--accent-rgb), 0.4), transparent);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform .5s ease;
+}
+.dir-card:hover::before { transform: scaleX(1); }
+.dir-card:hover { border-color: rgba(var(--accent-rgb), 0.2); transform: translateY(-4px); box-shadow: var(--shadow-card); background: var(--bg-card-hover); }
+.dir-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 18px; }
+.dir-card h3 { font-size: 17px; font-weight: 600; color: var(--text-secondary); margin-bottom: 10px; }
+.dir-card p { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
+.dir-card .sub-links { margin-top: 14px; }
+.dir-card .sub-links a { display: block; font-size: 13px; color: var(--accent-light); padding: 3px 0; }
+.dir-card .sub-links a:hover { color: var(--accent); }
+
+/* ── Branches ── */
+.branch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+.branch-card {
+  background: rgba(var(--accent-rgb), 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: 12px; padding: 20px;
+  text-align: center; transition: all .3s;
+}
+.branch-card:hover { border-color: rgba(var(--accent-rgb), 0.2); background: rgba(var(--accent-rgb), 0.04); transform: translateY(-2px); }
+.branch-card .city { font-size: 15px; font-weight: 600; color: var(--text-secondary); }
+.branch-card .name { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+
+/* ── News ── */
+.news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 24px; }
+.news-card {
+  background: var(--bg-card);
+  border-radius: 16px; overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: all .4s cubic-bezier(.4,0,.2,1);
+}
+.news-card:hover { transform: translateY(-6px); border-color: rgba(var(--accent-rgb), 0.2); box-shadow: var(--shadow-card); }
+.news-card-img { height: 200px; display: flex; align-items: center; justify-content: center; font-size: 14px; position: relative; overflow: hidden; }
+.news-card-img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 50%, var(--bg-primary)); }
+.news-card-body { padding: 24px; }
+.news-card-date { font-size: 12px; color: var(--text-dim); margin-bottom: 10px; }
+.news-card h3 { font-size: 17px; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px; line-height: 1.4; }
+.news-card p { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
+.news-card-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 14px; font-size: 14px; font-weight: 500; color: var(--accent-light); transition: gap .3s; }
+.news-card-link:hover { gap: 10px; }
+
+/* ── CTA ── */
+.cta-section {
+  background: linear-gradient(135deg, rgba(var(--accent-dark-rgb), 0.06), rgba(139,92,246,0.04));
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+.cta-box { text-align: center; max-width: 640px; margin: 0 auto; }
+.cta-box h2 { font-size: 32px; font-weight: 800; color: var(--text-secondary); margin-bottom: 12px; }
+.cta-box p { color: var(--text-muted); margin-bottom: 28px; font-size: 16px; }
+
+/* ── Contacts ── */
+.contact-section { border-top: 1px solid var(--border-light); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+.contact-info h3 { font-size: 22px; font-weight: 700; color: var(--text-secondary); margin-bottom: 20px; }
+.contact-info p { color: var(--text-muted); margin-bottom: 12px; display: flex; align-items: center; gap: 10px; font-size: 15px; }
+.contact-info .phone { font-size: 26px; font-weight: 800; color: var(--text-secondary); margin: 12px 0; }
+.contact-form { display: flex; flex-direction: column; gap: 16px; }
+.contact-form input, .contact-form textarea {
+  padding: 14px 18px;
+  border: 1px solid var(--border-input);
+  border-radius: 10px;
+  font-family: inherit; font-size: 14px;
+  outline: none; transition: all .25s;
+  background: var(--bg-input);
+  color: var(--text-primary);
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder { color: var(--text-dim); }
+.contact-form input:focus, .contact-form textarea:focus {
+  border-color: rgba(var(--accent-rgb), 0.4);
+  background: rgba(var(--accent-rgb), 0.02);
+  box-shadow: 0 0 0 3px rgba(var(--accent-rgb), 0.08);
+}
+.contact-form textarea { resize: vertical; min-height: 110px; }
+
+/* ── Footer ── */
+.footer { background: var(--bg-secondary); border-top: 1px solid var(--border-light); padding: 56px 0 24px; transition: background .4s; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 40px; }
+.footer h4 { color: var(--text-secondary); font-size: 15px; font-weight: 600; margin-bottom: 18px; }
+.footer a { color: var(--text-muted); display: block; margin-bottom: 10px; font-size: 14px; transition: all .25s; }
+.footer a:hover { color: var(--accent-light); transform: translateX(4px); }
+.footer p { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
+.footer-bottom { border-top: 1px solid var(--border-light); padding-top: 20px; text-align: center; font-size: 13px; color: var(--text-dim); }
+
+/* ── Partners Carousel ── */
+.partners-carousel { overflow: hidden; position: relative; }
+.partners-track {
+  display: flex; gap: 32px; animation: scroll-partners 35s linear infinite;
+  padding: 16px 0;
+}
+@keyframes scroll-partners {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.partners-track:hover { animation-play-state: paused; }
+.partner-logo {
+  flex-shrink: 0; width: 150px; text-align: center;
+  transition: all .3s;
+}
+.partner-logo:hover { transform: translateY(-6px); }
+.logo-placeholder {
+  width: 110px; height: 90px; border-radius: 16px;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 10px;
+  border: 1px solid var(--border-color); transition: all .3s;
+  background: rgba(var(--accent-rgb), 0.03);
+  color: var(--accent-light);
+}
+.logo-placeholder svg { max-width: 80%; max-height: 60%; }
+.logo-placeholder img { max-width: 85%; max-height: 65%; object-fit: contain; }
+.partner-logo:hover .logo-placeholder { border-color: rgba(var(--accent-rgb), 0.25); background: rgba(var(--accent-rgb), 0.06); }
+.partner-logo span { font-size: 12px; color: var(--text-muted); display: block; line-height: 1.3; }
+
+/* ── Scroll to Top ── */
+.scroll-top {
+  position: fixed; bottom: 32px; right: 32px; z-index: 99;
+  width: 52px; height: 52px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-dark), var(--accent));
+  color: #fff; border: none; cursor: pointer; font-size: 22px;
+  box-shadow: 0 4px 20px rgba(37,99,235,0.3);
+  transition: all .35s cubic-bezier(.4,0,.2,1);
+  opacity: 0; visibility: hidden; transform: translateY(20px);
+  display: flex; align-items: center; justify-content: center;
+}
+.scroll-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+.scroll-top:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(37,99,235,0.45); }
+.scroll-top:active { transform: translateY(-1px); }
+
+/* ── Animations ── */
+.reveal { opacity: 0; transform: translateY(40px); transition: all .7s cubic-bezier(.4,0,.2,1); }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .about-grid { grid-template-columns: 1fr; gap: 32px; }
+  .about-stats-grid { grid-template-columns: 1fr 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .main-nav { display: none; }
+  .main-nav.open {
+    display: flex; flex-direction: column; position: absolute; top: 76px; left: 0; right: 0;
+    background: var(--bg-primary); padding: 16px;
+    border-bottom: 1px solid var(--border-light);
+    backdrop-filter: blur(16px);
+  }
+  .main-nav a { padding: 12px 18px; }
+  .menu-toggle { display: flex; }
+  .hero .container { padding: 100px 24px 60px; }
+}
+@media (max-width: 600px) {
+  .hero-stats { flex-direction: column; gap: 24px; }
+  .about-features { grid-template-columns: 1fr; }
+  .about-stats-grid { grid-template-columns: 1fr; }
+  .news-grid { grid-template-columns: 1fr; }
+  .dir-grid { grid-template-columns: 1fr; }
+  .struct-grid { grid-template-columns: 1fr; }
+  .branch-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .section { padding: 60px 0; }
+  .top-bar-links a:not(.essential) { display: none; }
+  .partner-logo { width: 120px; }
+  .logo-placeholder { width: 90px; height: 72px; }
+  .scroll-top { width: 44px; height: 44px; font-size: 18px; bottom: 20px; right: 20px; }
+}
