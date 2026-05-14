@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет абитуриента — ПривГУПС</title>
+  <meta name="description" content="Подача документов в ПривГУПС онлайн. Заполните анкету, выберите направление и прикрепите документы.">
+  <meta property="og:title" content="Личный кабинет абитуриента — ПривГУПС">
+  <meta property="og:description" content="Подача документов в ПривГУПС онлайн.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://samgups.ru/applicant.html">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Личный кабинет абитуриента — ПривГУПС">
+  <meta name="twitter:description" content="Подача документов в ПривГУПС онлайн.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="preloader" id="preloader">
+    <div class="preloader-glow"></div>
+    <div class="preloader-logo">
+      <span class="preloader-logo-letter">И</span>
+      <span class="preloader-logo-letter">Т</span>
+      <span class="preloader-logo-letter">Ж</span>
+      <span class="preloader-logo-letter">Т</span>
+    </div>
+    <div class="preloader-underline"></div>
+    <div class="preloader-progress">
+      <div class="preloader-progress-track">
+        <div class="preloader-progress-fill"></div>
+      </div>
+    </div>
+    <div class="preloader-sub" data-i18n="loading">Загрузка</div>
+  </div>
+
+  <div class="top-bar">
+    <div class="container">
+      <span data-i18n="siteTitle">Приволжский государственный университет путей сообщения</span>
+      <div class="top-bar-links">
+        <a href="tel:88007752325" class="essential" data-i18n="topPhone">8-800-775-23-25</a>
+        <span style="color:var(--text-dim);">|</span>
+        <a href="#" class="essential" data-i18n="topBlind">Версия для слабовидящих</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <div class="container">
+      <a href="/" class="logo-wrap">
+        <div class="logo-icon">П</div>
+        <div>
+          <div class="logo-text" data-i18n="siteShort">ПривГУПС</div>
+          <small class="logo-text" style="font-weight:400;font-size:12px;color:var(--text-muted);display:block;">Приволжский государственный университет путей сообщения</small>
+        </div>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">Об университете</a>
+        <a href="education.html">Образование</a>
+        <a href="index.html#science">Наука</a>
+        <a href="index.html#structure">Структура</a>
+        <a href="news.html">Новости</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn search-btn" aria-label="Поиск" onclick="toggleSearch()">🔍</button>
+        <button class="icon-btn theme-btn" aria-label="Toggle theme"><span class="icon">☀</span></button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <span class="section-tag">📋</span>
+        <h1>Личный кабинет абитуриента</h1>
+        <p>Заполните анкету для поступления в ПривГУПС. Все поля обязательны для отправки.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="applicant-form-wrap">
+        <form class="applicant-form" id="applicantForm" onsubmit="return submitApplicantForm(event)">
+          <div class="form-step active" id="step1">
+            <div class="step-header">
+              <span class="step-num">1</span>
+              <div>
+                <div class="step-title">Личные данные</div>
+                <div class="step-desc">ФИО, контакты, документ, удостоверяющий личность</div>
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="form-field">
+                <label>Фамилия</label>
+                <input type="text" required pattern="[А-Яа-яA-Za-z\- ]+" title="Только буквы и дефис">
+              </div>
+              <div class="form-field">
+                <label>Имя</label>
+                <input type="text" required pattern="[А-Яа-яA-Za-z\- ]+" title="Только буквы и дефис">
+              </div>
+              <div class="form-field">
+                <label>Отчество</label>
+                <input type="text" pattern="[А-Яа-яA-Za-z\- ]*" title="Только буквы и дефис">
+              </div>
+              <div class="form-field">
+                <label>Дата рождения</label>
+                <input type="date" required>
+              </div>
+              <div class="form-field">
+                <label>Email</label>
+                <input type="email" required placeholder="example@mail.ru">
+              </div>
+              <div class="form-field">
+                <label>Телефон</label>
+                <input type="tel" required placeholder="+7 (___) ___-__-__" pattern="[\+\d\s\(\)\-]{10,}">
+              </div>
+              <div class="form-field">
+                <label>Серия и номер паспорта</label>
+                <input type="text" required placeholder="1234 567890" pattern="\d{4}\s?\d{6}">
+              </div>
+              <div class="form-field">
+                <label>Гражданство</label>
+                <select required>
+                  <option value="">Выберите...</option>
+                  <option>Российская Федерация</option>
+                  <option>СНГ</option>
+                  <option>Другое</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-step" id="step2">
+            <div class="step-header">
+              <span class="step-num">2</span>
+              <div>
+                <div class="step-title">Выбор направления</div>
+                <div class="step-desc">Уровень образования и специальность</div>
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="form-field">
+                <label>Уровень образования</label>
+                <select required onchange="filterPrograms(this.value)">
+                  <option value="">Выберите...</option>
+                  <option value="bachelor">Бакалавриат</option>
+                  <option value="specialist">Специалитет</option>
+                  <option value="master">Магистратура</option>
+                  <option value="postgrad">Аспирантура</option>
+                  <option value="spo">Среднее профессиональное</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label>Направление подготовки</label>
+                <select required id="programSelect">
+                  <option value="">Сначала выберите уровень</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label>Форма обучения</label>
+                <select required>
+                  <option value="">Выберите...</option>
+                  <option>Очная</option>
+                  <option>Очно-заочная</option>
+                  <option>Заочная</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label>На базе какого образования поступаете?</label>
+                <select required>
+                  <option value="">Выберите...</option>
+                  <option>Среднее общее (11 классов)</option>
+                  <option>Среднее профессиональное</option>
+                  <option>Высшее</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-step" id="step3">
+            <div class="step-header">
+              <span class="step-num">3</span>
+              <div>
+                <div class="step-title">Документы</div>
+                <div class="step-desc">Загрузите сканы необходимых документов</div>
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="form-field">
+                <label>Паспорт (главная страница)</label>
+                <div class="file-upload" onclick="this.querySelector('input').click()">
+                  <input type="file" accept=".pdf,.jpg,.jpeg,.png" required hidden>
+                  <span class="file-upload-text">Нажмите для загрузки</span>
+                  <span class="file-upload-hint">PDF, JPG, PNG до 10 МБ</span>
+                </div>
+              </div>
+              <div class="form-field">
+                <label>Документ об образовании</label>
+                <div class="file-upload" onclick="this.querySelector('input').click()">
+                  <input type="file" accept=".pdf,.jpg,.jpeg,.png" required hidden>
+                  <span class="file-upload-text">Нажмите для загрузки</span>
+                  <span class="file-upload-hint">PDF, JPG, PNG до 10 МБ</span>
+                </div>
+              </div>
+              <div class="form-field">
+                <label>Фотография 3×4</label>
+                <div class="file-upload" onclick="this.querySelector('input').click()">
+                  <input type="file" accept=".jpg,.jpeg,.png" required hidden>
+                  <span class="file-upload-text">Нажмите для загрузки</span>
+                  <span class="file-upload-hint">JPG, PNG до 5 МБ</span>
+                </div>
+              </div>
+              <div class="form-field">
+                <label>Дополнительные документы (если есть)</label>
+                <div class="file-upload" onclick="this.querySelector('input').click()">
+                  <input type="file" accept=".pdf,.jpg,.jpeg,.png" multiple hidden>
+                  <span class="file-upload-text">Нажмите для загрузки</span>
+                  <span class="file-upload-hint">Можно выбрать несколько файлов</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Кнопки навигации по шагам -->
+          <div class="form-nav">
+            <button type="button" class="btn btn-outline" id="prevBtn" onclick="prevStep()" style="display:none;">Назад</button>
+            <button type="button" class="btn btn-primary" id="nextBtn" onclick="nextStep()">Далее</button>
+            <button type="submit" class="btn btn-primary" id="submitBtn" style="display:none;">Отправить заявку</button>
+          </div>
+        </form>
+
+        <!-- Прогресс-бар -->
+        <div class="form-progress">
+          <div class="form-progress-bar" id="progressBar"></div>
+          <div class="form-progress-steps">
+            <span class="form-progress-dot active" data-step="1">1</span>
+            <span class="form-progress-line"></span>
+            <span class="form-progress-dot" data-step="2">2</span>
+            <span class="form-progress-line"></span>
+            <span class="form-progress-dot" data-step="3">3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4 data-i18n="siteShort">ПривГУПС</h4>
+          <p data-i18n="footerDesc">Приволжский государственный университет путей сообщения. Готовим специалистов для железнодорожной отрасли с 1973 года. Лицензия и государственная аккредитация.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footerEdu">Образование</h4>
+          <a href="education.html" data-i18n="footerEdu1">Высшее образование</a>
+          <a href="education.html" data-i18n="footerEdu2">Среднее проф. образование</a>
+          <a href="education.html" data-i18n="footerEdu3">Доп. образование</a>
+          <a href="education.html" data-i18n="footerEdu4">Аспирантура</a>
+          <a href="index.html#branches" data-i18n="footerEdu5">Филиалы</a>
+        </div>
+        <div>
+          <h4 data-i18n="footerStudents">Студентам</h4>
+          <a href="https://euniver.samgups.ru" target="_blank" data-i18n="footerStud1">Расписание занятий</a>
+          <a href="https://euniver.samgups.ru" target="_blank" data-i18n="footerStud2">Личный кабинет</a>
+          <a href="https://euniver.samgups.ru" target="_blank" data-i18n="footerStud3">Цифровой университет</a>
+          <a href="#" data-i18n="footerStud4">Общежития</a>
+          <a href="#" data-i18n="footerStud5">Спорт и культура</a>
+        </div>
+        <div>
+          <h4 data-i18n="footerUniv">Университет</h4>
+          <a href="about.html" data-i18n="footerUniv1">История и музей</a>
+          <a href="about.html" data-i18n="footerUniv2">Руководство</a>
+          <a href="#" data-i18n="footerUniv3">Противодействие коррупции</a>
+          <a href="#" data-i18n="footerUniv4">Пресс-центр</a>
+          <a href="contacts.html" data-i18n="footerUniv5">Контакты</a>
+        </div>
+      </div>
+      <div class="footer-bottom" data-i18n="footerCopy">© 2026 Приволжский государственный университет путей сообщения (ПривГУПС)</div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

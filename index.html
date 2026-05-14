@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="siteTitle">Приволжский государственный университет путей сообщения</title>
+  <meta name="description" content="ПривГУПС — ведущий транспортный вуз Поволжья. Высшее и среднее профессиональное образование, наука и инновации для железнодорожной отрасли России.">
+  <meta property="og:title" content="ПривГУПС — Приволжский государственный университет путей сообщения">
+  <meta property="og:description" content="Ведущий транспортный вуз Поволжья. Высшее и среднее профессиональное образование, наука и инновации для железнодорожной отрасли России.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://samgups.ru">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ПривГУПС — Приволжский государственный университет путей сообщения">
+  <meta name="twitter:description" content="Ведущий транспортный вуз Поволжья. Высшее и среднее профессиональное образование, наука и инновации.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══ ПРЕЛОАДЕР (экран загрузки) ═══ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-glow"></div>
+    <div class="preloader-logo">
+      <span class="preloader-logo-letter">И</span>
+      <span class="preloader-logo-letter">Т</span>
+      <span class="preloader-logo-letter">Ж</span>
+      <span class="preloader-logo-letter">Т</span>
+    </div>
+    <div class="preloader-underline"></div>
+    <div class="preloader-progress">
+      <div class="preloader-progress-track">
+        <div class="preloader-progress-fill"></div>
+      </div>
+    </div>
+    <div class="preloader-sub" data-i18n="loading">Загрузка</div>
+  </div>
+
+  <!-- ═══ ВЕРХНЯЯ ПАНЕЛЬ (контакты, спец.возможности) ═══ -->
+  <div class="top-bar">
+    <div class="container">
+      <span data-i18n="siteTitle">Приволжский государственный университет путей сообщения</span>
+      <div class="top-bar-links">
+        <a href="tel:88007752325" class="essential" data-i18n="topPhone">8-800-775-23-25</a>
+        <span style="color:var(--text-dim);">|</span>
+        <a href="#" class="essential" data-i18n="topBlind">Версия для слабовидящих</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ ШАПКА САЙТА (логотип, навигация, переключатели) ═══ -->
+  <header class="main-header">
+    <div class="container">
+      <a href="/" class="logo-wrap">
+        <div class="logo-icon">П</div>
+        <div>
+          <div class="logo-text" data-i18n="siteShort">ПривГУПС</div>
+          <small class="logo-text" style="font-weight:400;font-size:12px;color:var(--text-muted);display:block;" data-i18n="siteSub">Приволжский государственный университет путей сообщения</small>
+        </div>
+      </a>
+      <!-- Главная навигация по разделам -->
+      <nav class="main-nav" id="mainNav">
+        <a href="#hero" class="active" data-i18n="navHome">Главная</a>
+        <a href="#about" data-i18n="navAbout">Об университете</a>
+        <a href="#education" data-i18n="navEducation">Образование</a>
+        <a href="#science" data-i18n="navScience">Наука</a>
+        <a href="#structure" data-i18n="navStructure">Структура</a>
+        <a href="news.html">Новости</a>
+        <a href="#contacts" data-i18n="navContacts">Контакты</a>
+      </nav>
+      <!-- Кнопки: язык, тема, мобильное меню -->
+      <div class="header-actions">
+        <button class="icon-btn lang-btn-ru" title="Русский">RU</button>
+        <button class="icon-btn lang-btn-en" title="English">EN</button>
+        <button class="icon-btn search-btn" aria-label="Поиск" onclick="toggleSearch()">🔍</button>
+        <button class="icon-btn theme-btn" aria-label="Toggle theme"><span class="icon">☀</span></button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ ГЛАВНЫЙ ЭКРАН (HERO) ═══ -->
+  <section class="hero" id="hero">
+    <!-- Холст для анимации частиц -->
+    <div class="hero-canvas" id="heroCanvas"></div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <!-- Бейдж приёмной кампании -->
+        <div class="hero-badge"><span class="dot"></span> <span data-i18n="heroBadge">Приемная кампания 2026</span></div>
+        <h1><span data-i18n="heroTitle1">Построй будущее</span><br><span class="gradient-text" data-i18n="heroTitle2">с ПривГУПС</span></h1>
+        <p data-i18n="heroDesc">Ведущий транспортный вуз Поволжья. Высшее и среднее профессиональное образование, наука и инновации для железнодорожной отрасли России. Основан в 1973 году.</p>
+        <!-- Кнопки действий -->
+        <div class="hero-btns">
+          <a href="applicant.html" class="btn btn-primary" data-i18n="heroBtn1">Подать документы</a>
+          <a href="about.html" class="btn btn-outline" data-i18n="heroBtn2">О университете</a>
+        </div>
+        <!-- Ключевые показатели университета -->
+        <div class="hero-stats">
+          <div class="hero-stat"><span class="num">12 000+</span><span class="label" data-i18n="statStudents">Студентов</span></div>
+          <div class="hero-stat"><span class="num">40+</span><span class="label" data-i18n="statDirections">Направлений подготовки</span></div>
+          <div class="hero-stat"><span class="num">10</span><span class="label" data-i18n="statBranches">Филиалов в городах РФ</span></div>
+          <div class="hero-stat"><span class="num">1973</span><span class="label" data-i18n="statFounded">Год основания</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ОБ УНИВЕРСИТЕТЕ ═══ -->
+  <section class="section" id="about">
+    <div class="container">
+      <!-- Заголовок секции -->
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="aboutTag">О университете</span>
+        <h2 data-i18n="aboutTitle">Приволжский государственный университет путей сообщения</h2>
+        <p data-i18n="aboutDesc">ПривГУПС — ведущий транспортный вуз Поволжья, готовящий специалистов для железнодорожной отрасли и транспортного комплекса России</p>
+      </div>
+      <!-- Сетка: текст + статистика -->
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <h3 data-i18n="aboutSubtitle">История и миссия</h3>
+          <p data-i18n="aboutP1">Приволжский государственный университет путей сообщения (ранее — СамГУПС) ведёт свою историю с 1973 года. За десятилетия работы вуз подготовил десятки тысяч высококвалифицированных специалистов для железнодорожного транспорта.</p>
+          <p data-i18n="aboutP2">Сегодня ПривГУПС — это современный образовательный и научный центр, объединяющий головной вуз в Самаре, 10 филиалов и 3 техникума в городах Поволжья, Прикамья и Центральной России.</p>
+          <!-- Ключевые преимущества -->
+          <div class="about-features">
+            <div class="about-feature"><span class="check">✓</span> <span data-i18n="aboutF1">Государственная аккредитация</span></div>
+            <div class="about-feature"><span class="check">✓</span> <span data-i18n="aboutF2">Военная кафедра</span></div>
+            <div class="about-feature"><span class="check">✓</span> <span data-i18n="aboutF3">Бюджетные места</span></div>
+            <div class="about-feature"><span class="check">✓</span> <span data-i18n="aboutF4">Общежития для студентов</span></div>
+            <div class="about-feature"><span class="check">✓</span> <span data-i18n="aboutF5">Трудоустройство в РЖД</span></div>
+            <div class="about-feature"><span class="check">✓</span> <span data-i18n="aboutF6">Цифровая образовательная среда</span></div>
+          </div>
+        </div>
+        <!-- Блок цифр и достижений -->
+        <div class="about-stats-grid">
+          <div class="stat-card" style="--stat-bg:linear-gradient(135deg,rgba(59,130,246,0.12),rgba(59,130,246,0.04));--stat-border:rgba(59,130,246,0.1);">
+            <div class="num" style="background:linear-gradient(135deg,#60a5fa,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">12 000+</div>
+            <div class="lbl" data-i18n="statStudents">Студентов</div>
+          </div>
+          <div class="stat-card" style="--stat-bg:linear-gradient(135deg,rgba(16,185,129,0.12),rgba(16,185,129,0.04));--stat-border:rgba(16,185,129,0.1);">
+            <div class="num" style="background:linear-gradient(135deg,#34d399,#10b981);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">40+</div>
+            <div class="lbl" data-i18n="statDirections">Направлений</div>
+          </div>
+          <div class="stat-card" style="--stat-bg:linear-gradient(135deg,rgba(245,158,11,0.12),rgba(245,158,11,0.04));--stat-border:rgba(245,158,11,0.1);">
+            <div class="num" style="background:linear-gradient(135deg,#fbbf24,#f59e0b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">10</div>
+            <div class="lbl" data-i18n="statBranches">Филиалов</div>
+          </div>
+          <div class="stat-card" style="--stat-bg:linear-gradient(135deg,rgba(168,85,247,0.12),rgba(168,85,247,0.04));--stat-border:rgba(168,85,247,0.1);">
+            <div class="num" style="background:linear-gradient(135deg,#c084fc,#a855f7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">1973</div>
+            <div class="lbl" data-i18n="statFounded">Год основания</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ СТРУКТУРА И СВЕДЕНИЯ ═══ -->
+  <section class="section structure-section" id="structure">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="structTag">Структура</span>
+        <h2 data-i18n="structTitle">Сведения об образовательной организации</h2>
+        <p data-i18n="structDesc">Полная информация о деятельности университета в соответствии с требованиями законодательства РФ</p>
+      </div>
+      <div class="struct-grid">
+        <div class="struct-card reveal"><span class="badge" style="background:rgba(59,130,246,0.15);color:#60a5fa;" data-i18n="structBadge1">Основное</span><h4 data-i18n="struct1Title">Основные сведения</h4><p data-i18n="struct1Desc">Полное наименование, дата создания, учредитель, место нахождения, режим работы</p><a href="#" data-i18n="structMore">Подробнее →</a></div>
+        <div class="struct-card reveal"><span class="badge" style="background:rgba(16,185,129,0.15);color:#34d399;" data-i18n="structBadge2">Структура</span><h4 data-i18n="struct2Title">Структура и органы управления</h4><p data-i18n="struct2Desc">Ректорат, факультеты, кафедры, филиалы, представительства, коллегиальные органы</p><a href="#" data-i18n="structMore">Подробнее →</a></div>
+        <div class="struct-card reveal"><span class="badge" style="background:rgba(245,158,11,0.15);color:#fbbf24;" data-i18n="structBadge3">Документы</span><h4 data-i18n="struct3Title">Документы</h4><p data-i18n="struct3Desc">Устав, лицензия, свидетельство об аккредитации, локальные нормативные акты</p><a href="#" data-i18n="structMore">Подробнее →</a></div>
+        <div class="struct-card reveal"><span class="badge" style="background:rgba(168,85,247,0.15);color:#c084fc;" data-i18n="structBadge4">Стандарты</span><h4 data-i18n="struct4Title">Образовательные стандарты</h4><p data-i18n="struct4Desc">ФГОС по всем направлениям, учебные планы, аннотации к программам</p><a href="#" data-i18n="structMore">Подробнее →</a></div>
+        <div class="struct-card reveal"><span class="badge" style="background:rgba(236,72,153,0.15);color:#f472b6;" data-i18n="structBadge5">Руководство</span><h4 data-i18n="struct5Title">Руководство и педсостав</h4><p data-i18n="struct5Desc">Ректор, проректоры, деканы, заведующие кафедрами, преподавательский состав</p><a href="#" data-i18n="structMore">Подробнее →</a></div>
+        <div class="struct-card reveal"><span class="badge" style="background:rgba(59,130,246,0.15);color:#60a5fa;" data-i18n="structBadge6">Материалы</span><h4 data-i18n="struct6Title">Материально-техническая база</h4><p data-i18n="struct6Desc">Учебные корпуса, лаборатории, библиотеки, общежития, спортсооружения</p><a href="#" data-i18n="structMore">Подробнее →</a></div>
+        <div class="struct-card reveal"><span class="badge" style="background:rgba(16,185,129,0.15);color:#34d399;" data-i18n="structBadge7">Финансы</span><h4 data-i18n="struct7Title">Финансово-хозяйственная деятельность</h4><p data-i18n="struct7Desc">Платные услуги, бюджет, стипендии, вакантные места, меры поддержки</p><a href="#" data-i18n="structMore">Подробнее →</a></div>
+        <div class="struct-card reveal"><span class="badge" style="background:rgba(245,158,11,0.15);color:#fbbf24;" data-i18n="structBadge8">Сотрудничество</span><h4 data-i18n="struct8Title">Международная деятельность</h4><p data-i18n="struct8Desc">Программы обмена, международные проекты, сотрудничество с зарубежными вузами</p><a href="#" data-i18n="structMore">Подробнее →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ОБРАЗОВАНИЕ ═══ -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="eduTag">Образование</span>
+        <h2 data-i18n="eduTitle">Программы подготовки</h2>
+        <p data-i18n="eduDesc">Современные образовательные программы высшего, среднего профессионального и дополнительного образования</p>
+      </div>
+      <!-- Сетка направлений подготовки -->
+      <div class="dir-grid">
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(59,130,246,0.15);color:#60a5fa;">🎓</div>
+          <h3 data-i18n="edu1Title">Высшее образование</h3>
+          <p data-i18n="edu1Desc">Бакалавриат, специалитет, магистратура и аспирантура. Транспортные, инженерные, IT и экономические специальности.</p>
+          <div class="sub-links">
+            <a href="contacts.html" data-i18n="edu1Link1">Абитуриентам →</a>
+            <a href="contacts.html" data-i18n="edu1Link2">Приемная комиссия →</a>
+            <a href="education.html" data-i18n="edu1Link3">Вопросы и ответы →</a>
+          </div>
+        </div>
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(16,185,129,0.15);color:#34d399;">📖</div>
+          <h3 data-i18n="edu2Title">Среднее профессиональное образование</h3>
+          <p data-i18n="edu2Desc">Колледжи и техникумы в Самаре, Саратове, Казани, Пензе, Кирове, Алатыре, Ижевске, Ртищево.</p>
+          <div class="sub-links">
+            <a href="education.html" data-i18n="edu2Link1">Самарский колледж ж/д транспорта →</a>
+            <a href="index.html#branches" data-i18n="edu2Link2">Все филиалы СПО →</a>
+          </div>
+        </div>
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(245,158,11,0.15);color:#fbbf24;">🔬</div>
+          <h3 data-i18n="edu3Title">Дополнительное образование</h3>
+          <p data-i18n="edu3Desc">Повышение квалификации, профессиональная переподготовка, центр транспортной безопасности.</p>
+          <div class="sub-links">
+            <a href="education.html" data-i18n="edu3Link1">Институт дополнительного образования →</a>
+            <a href="education.html" data-i18n="edu3Link2">Институт профессиональных компетенций →</a>
+          </div>
+        </div>
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(168,85,247,0.15);color:#c084fc;">👨‍🎓</div>
+          <h3 data-i18n="edu4Title">Студентам</h3>
+          <p data-i18n="edu4Desc">Расписание, цифровой университет, личный кабинет, общежития, портфолио, спорт и культура.</p>
+          <div class="sub-links">
+            <a href="https://euniver.samgups.ru" target="_blank" data-i18n="edu4Link1">Цифровой университет →</a>
+            <a href="https://euniver.samgups.ru" target="_blank" data-i18n="edu4Link2">Личный кабинет →</a>
+            <a href="https://euniver.samgups.ru" target="_blank" data-i18n="edu4Link3">Расписание →</a>
+            <a href="education.html" data-i18n="edu4Link4">Библиотека →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ ═══ -->
+  <section class="section" style="background:var(--bg-section-alt);" id="science">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="scienceTag">Наука</span>
+        <h2 data-i18n="scienceTitle">Научная деятельность</h2>
+        <p data-i18n="scienceDesc">Фундаментальные и прикладные исследования в области железнодорожного транспорта и смежных отраслей</p>
+      </div>
+      <div class="dir-grid">
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(59,130,246,0.15);color:#60a5fa;">🔬</div>
+          <h3 data-i18n="sci1Title">Научные школы и разработки</h3>
+          <p data-i18n="sci1Desc">Исследования в области безопасности движения, цифровых технологий на транспорте, строительства ж/д путей и логистики.</p>
+        </div>
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(16,185,129,0.15);color:#34d399;">🎓</div>
+          <h3 data-i18n="sci2Title">Диссертационный совет</h3>
+          <p data-i18n="sci2Desc">Совет 44.2.006.01 по защите докторских и кандидатских диссертаций по транспортным специальностям.</p>
+        </div>
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(245,158,11,0.15);color:#fbbf24;">📰</div>
+          <h3 data-i18n="sci3Title">Научные издания</h3>
+          <p data-i18n="sci3Desc">Рецензируемые научные журналы, сборники трудов конференций, монографии и учебные пособия.</p>
+        </div>
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(168,85,247,0.15);color:#c084fc;">⭐</div>
+          <h3 data-i18n="sci4Title">Конкурсы и гранты</h3>
+          <p data-i18n="sci4Desc">Конкурсы РНФ, гранты Президента РФ, студенческие научные кружки и олимпиады дипломных проектов.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ГЕОГРАФИЯ (ФИЛИАЛЫ) ═══ -->
+  <section class="section structure-section" id="branches">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">🏛</span>
+        <h2 data-i18n="branchesTitle">География ПривГУПС</h2>
+        <p data-i18n="branchesDesc">10 филиалов и 3 техникума в городах Поволжья, Прикамья и Центральной России</p>
+      </div>
+      <!-- Сетка городов и филиалов -->
+      <div class="branch-grid reveal">
+        <div class="branch-card"><div class="city">Самара</div><div class="name">Головной вуз ПривГУПС</div></div>
+        <div class="branch-card"><div class="city">Оренбург</div><div class="name">ОрИПС — филиал ПривГУПС</div></div>
+        <div class="branch-card"><div class="city">Уфа</div><div class="name">УТЖТ — филиал ПривГУПС</div></div>
+        <div class="branch-card"><div class="city">Нижний Новгород</div><div class="name">НИПС — филиал ПривГУПС</div></div>
+        <div class="branch-card"><div class="city">Алатырь</div><div class="name">Филиал ПривГУПС в г. Алатыре</div></div>
+        <div class="branch-card"><div class="city">Ижевск</div><div class="name">ИТЖТ — филиал ПривГУПС</div></div>
+        <div class="branch-card"><div class="city">Казань</div><div class="name">Филиал ПривГУПС в г. Казани</div></div>
+        <div class="branch-card"><div class="city">Пенза</div><div class="name">Филиал ПривГУПС в г. Пензе</div></div>
+        <div class="branch-card"><div class="city">Ртищево</div><div class="name">Филиал ПривГУПС в г. Ртищево</div></div>
+        <div class="branch-card"><div class="city">Саратов</div><div class="name">Филиал ПривГУПС в г. Саратове</div></div>
+        <div class="branch-card"><div class="city">Киров</div><div class="name">Филиал ПривГУПС в г. Кирове</div></div>
+        <div class="branch-card"><div class="city">Рузаевка</div><div class="name">Представительство ПривГУПС</div></div>
+        <div class="branch-card"><div class="city">Орск</div><div class="name">Филиал ПривГУПС в г. Орске</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ПАРТНЁРЫ И РАБОТОДАТЕЛИ ═══ -->
+  <section class="section structure-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">🤝</span>
+        <h2>Партнёры и работодатели</h2>
+        <p>Ведущие компании транспортной отрасли — наши стратегические партнёры</p>
+      </div>
+      <!-- Бесконечная карусель логотипов партнёров -->
+      <div class="partners-carousel reveal">
+        <div class="partners-track" id="partnersTrack">
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Russian_Railways_Logo.svg" alt="РЖД" style="filter:drop-shadow(0 2px 4px rgba(0,0,0,0.1));" loading="lazy">
+            </div>
+            <span>ОАО «РЖД»</span>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Transmashholding_Logo.svg" alt="ТМХ" loading="lazy">
+            </div>
+            <span>Трансмашхолдинг</span>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Federalpkrzd.png" alt="ФПК" loading="lazy">
+            </div>
+            <span>Федеральная пассажирская компания</span>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Sibur_Holding_Logo.svg" alt="СИБУР" loading="lazy">
+            </div>
+            <span>СИБУР</span>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Logo_Transneft.svg" alt="Транснефть" loading="lazy">
+            </div>
+            <span>Транснефть</span>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/TransContainer_Logo.png" alt="ТрансКонтейнер" loading="lazy">
+            </div>
+            <span>ТрансКонтейнер</span>
+          </div>
+          <!-- Duplicate for infinite scroll -->
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Russian_Railways_Logo.svg" alt="РЖД" style="filter:drop-shadow(0 2px 4px rgba(0,0,0,0.1));" loading="lazy">
+            </div>
+            <span>ОАО «РЖД»</span>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Transmashholding_Logo.svg" alt="ТМХ" loading="lazy">
+            </div>
+            <span>Трансмашхолдинг</span>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Federalpkrzd.png" alt="ФПК" loading="lazy">
+            </div>
+            <span>Федеральная пассажирская компания</span>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Sibur_Holding_Logo.svg" alt="СИБУР" loading="lazy">
+            </div>
+            <span>СИБУР</span>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Logo_Transneft.svg" alt="Транснефть" loading="lazy">
+            </div>
+            <span>Транснефть</span>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/TransContainer_Logo.png" alt="ТрансКонтейнер" loading="lazy">
+            </div>
+            <span>ТрансКонтейнер</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ КУЛЬТУРА И СПОРТ ═══ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">🏆</span>
+        <h2>Культура и спорт</h2>
+        <p>Студенческая жизнь в ПривГУПС — это не только учёба, но и яркие события, творчество, спорт и общественная деятельность</p>
+      </div>
+      <!-- Сетка направлений внеучебной деятельности -->
+      <div class="dir-grid">
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(59,130,246,0.15);color:#60a5fa;">🎭</div>
+          <h3>Культура и творчество</h3>
+          <p>Студенческие коллективы, вокальные и танцевальные студии, КВН, театральная студия, творческие фестивали и конкурсы.</p>
+        </div>
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(16,185,129,0.15);color:#34d399;">⚽</div>
+          <h3>Спортивная жизнь</h3>
+          <p>Спортивный клуб, физкультурно-оздоровительный центр, секции по футболу, волейболу, баскетболу, лёгкой атлетике и единоборствам.</p>
+        </div>
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(245,158,11,0.15);color:#fbbf24;">🤝</div>
+          <h3>Общественные организации</h3>
+          <p>Студенческие трудовые отряды, профсоюзная организация, совет обучающихся, молодёжный центр "Молодая семья".</p>
+        </div>
+        <div class="dir-card reveal">
+          <div class="dir-icon" style="background:rgba(168,85,247,0.15);color:#c084fc;">🏛️</div>
+          <h3>Музей истории вуза</h3>
+          <p>Музей истории ПривГУПС рассказывает о становлении и развитии университета, его выдающихся выпускниках и научных достижениях.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ НОВОСТИ ═══ -->
+  <section class="section" style="background:var(--bg-section-alt);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="newsTag">Новости</span>
+        <h2 data-i18n="newsTitle">Последние события университета</h2>
+        <p data-i18n="newsDesc">Будьте в курсе главных новостей ПривГУПС</p>
+      </div>
+      <!-- Сетка новостей, заполняется через JS -->
+      <div class="news-grid" id="newsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ═══ ПРИЗЫВ К ДЕЙСТВИЮ (CTA) ═══ -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-box reveal">
+        <h2 data-i18n="ctaTitle">Готов стать частью ПривГУПС?</h2>
+        <p data-i18n="ctaDesc">Подай документы онлайн уже сегодня и начни путь к профессии будущего в ведущем транспортном вузе Поволжья</p>
+        <a href="applicant.html" class="btn btn-primary" data-i18n="ctaBtn">Поступить сейчас</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ КОНТАКТЫ ═══ -->
+  <section class="section contact-section" id="contacts">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="contactsTag">Контакты</span>
+        <h2 data-i18n="contactsTitle">Свяжитесь с нами</h2>
+      </div>
+      <!-- Сетка: информация + форма обратной связи -->
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Приемная комиссия</h3>
+          <div class="phone" data-i18n="contactPhone">8-800-775-23-25</div>
+          <p>📍 <span data-i18n="contactAddress">г. Самара, ул. Свободы, 2В</span></p>
+          <p>✉️ <span data-i18n="contactEmail">priem@samgups.ru</span></p>
+          <p>🕐 <span data-i18n="contactHours">Пн–Пт: 9:00 – 17:00</span></p>
+          <h3 style="margin-top:28px;" data-i18n="contactRector">Ректорат</h3>
+          <p>📍 <span data-i18n="contactRectorAddr">г. Самара, ул. Свободы, 2В, каб. 3401</span></p>
+          <p>✉️ <span data-i18n="contactRectorEmail">rector@samgups.ru</span></p>
+          <p style="margin-top:20px;font-size:14px;color:var(--text-muted);">
+            <span data-i18n="contactDigital">Цифровой университет:</span>
+            <a href="https://euniver.samgups.ru" target="_blank" style="color:var(--accent-light);font-weight:500;">euniver.samgups.ru</a>
+          </p>
+        </div>
+        <!-- Форма обратной связи -->
+        <form class="contact-form reveal" onsubmit="event.preventDefault();alert(i18n[currentLang].formAlert)">
+          <input type="text" data-i18n="formName" placeholder="Ваше имя" required>
+          <input type="email" data-i18n="formEmail" placeholder="Email" required>
+          <input type="tel" data-i18n="formPhone" placeholder="Телефон">
+          <textarea data-i18n="formMessage" placeholder="Ваш вопрос..." required></textarea>
+          <button type="submit" class="btn btn-primary" style="align-self:flex-start;" data-i18n="formSubmit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ПОДВАЛ (FOOTER) ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4 data-i18n="siteShort">ПривГУПС</h4>
+          <p data-i18n="footerDesc">Приволжский государственный университет путей сообщения. Готовим специалистов для железнодорожной отрасли с 1973 года. Лицензия и государственная аккредитация.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footerEdu">Образование</h4>
+          <a href="education.html" data-i18n="footerEdu1">Высшее образование</a>
+          <a href="education.html" data-i18n="footerEdu2">Среднее проф. образование</a>
+          <a href="education.html" data-i18n="footerEdu3">Доп. образование</a>
+          <a href="education.html" data-i18n="footerEdu4">Аспирантура</a>
+          <a href="index.html#branches" data-i18n="footerEdu5">Филиалы</a>
+        </div>
+        <div>
+          <h4 data-i18n="footerStudents">Студентам</h4>
+          <a href="https://euniver.samgups.ru" target="_blank" data-i18n="footerStud1">Расписание занятий</a>
+          <a href="https://euniver.samgups.ru" target="_blank" data-i18n="footerStud2">Личный кабинет</a>
+          <a href="https://euniver.samgups.ru" target="_blank" data-i18n="footerStud3">Цифровой университет</a>
+          <a href="#" data-i18n="footerStud4">Общежития</a>
+          <a href="#" data-i18n="footerStud5">Спорт и культура</a>
+        </div>
+        <div>
+          <h4 data-i18n="footerUniv">Университет</h4>
+          <a href="about.html" data-i18n="footerUniv1">История и музей</a>
+          <a href="about.html" data-i18n="footerUniv2">Руководство</a>
+          <a href="#" data-i18n="footerUniv3">Противодействие коррупции</a>
+          <a href="#" data-i18n="footerUniv4">Пресс-центр</a>
+          <a href="contacts.html" data-i18n="footerUniv5">Контакты</a>
+        </div>
+      </div>
+      <div class="footer-bottom" data-i18n="footerCopy">© 2026 Приволжский государственный университет путей сообщения (ПривГУПС)</div>
+    </div>
+  </footer>
+
+  <!-- ═══ ПОИСКОВЫЙ ОВЕРЛЕЙ ═══ -->
+  <div class="search-overlay" id="searchOverlay">
+    <button class="search-overlay-close" onclick="toggleSearch()">✕</button>
+    <input class="search-overlay-input" id="searchInput" type="text" placeholder="Поиск по сайту..." oninput="doSearch(this.value)" autofocus>
+    <div class="search-overlay-results" id="searchResults"></div>
+  </div>
+
+  <!-- ═══ КНОПКА «НАВЕРХ» ═══ -->
+  <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
